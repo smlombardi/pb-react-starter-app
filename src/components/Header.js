@@ -1,4 +1,6 @@
 import React from "react";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 export default function Header() {
   return (
     <>
@@ -37,31 +39,18 @@ export default function Header() {
                     </li>
 
                     <li className="nav-item dropdown">
-                      <a
-                        className="nav-link dropdown-toggle"
-                        href="#"
-                        id="navbarDropdownMenuLink"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
+                      <DropdownButton
+                        id="dropdown-basic-button"
+                        title="Dropdown button"
                       >
-                        Menu 1
-                      </a>
-                      <div
-                        className="dropdown-menu"
-                        aria-labelledby="navbarDropdownMenuLink"
-                      >
-                        <a className="dropdown-item" routerLink="">
-                          Menu Item 1
-                        </a>
-                        <a className="dropdown-item" routerLink="">
-                          Menu Item 2
-                        </a>
-                        <a className="dropdown-item" routerLink="">
-                          Menu Item 3
-                        </a>
-                      </div>
+                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">
+                          Another action
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">
+                          Something else
+                        </Dropdown.Item>
+                      </DropdownButton>
                     </li>
 
                     <li className="nav-item dropdown">
