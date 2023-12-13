@@ -1,17 +1,13 @@
-import React, { useEffect, useState } from "react";
-
 export default function Footer() {
-  const [date, setDate] = useState(null);
-  useEffect(() => {
-    const startYear = 2021;
-    const currentYear = new Date().getFullYear();
+  const startYear = 2021;
+  const currentYear = new Date().getFullYear();
+  let date = "";
 
-    if (startYear === currentYear) {
-      setDate(`${currentYear}`);
-    } else {
-      setDate(`${startYear}-${currentYear}`);
-    }
-  }, []);
+  if (startYear === currentYear) {
+    date = currentYear;
+  } else {
+    date = `${startYear}-${currentYear}`;
+  }
 
   return (
     <footer class="py-3">
