@@ -1,10 +1,10 @@
 import Layout from "./Layout";
 import PageTitle from "../components/PageTitle";
 
-export default function Home() {
+export default function Item1() {
   return (
     <Layout>
-      <PageTitle ttl="Home" layout="container" />
+      <PageTitle ttl="Item1" sub="I am a typical subhead" layout="container" />
       <div className="container mt-7">
         <div className="row">
           <div className="col">
