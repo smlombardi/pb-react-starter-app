@@ -1,17 +1,20 @@
+import { Routes, BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+
+import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="site-wrapper">
-      <div>
-        <Header />
-        <Home className="site-content" />
-      </div>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
+
+        <Route path="*" element={<div>PageNotFound</div>} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -31,7 +31,7 @@ export default function Footer() {
               <a class="d-block" href="">
                 Legal
               </a>
-              <a class="d-block ml-3" routerLink="/accessibility">
+              <a class="d-block ml-3" href="">
                 Accessibility
               </a>
               <a class="d-block ml-3" href="">
