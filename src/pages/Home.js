@@ -1,5 +1,6 @@
 import Layout from "./Layout";
 import PageTitle from "../components/PageTitle";
+import AccordionComponent from "../components/Accordion";
 
 export default function Home() {
   return (
@@ -14,6 +15,11 @@ export default function Home() {
             error rerum vitae. Quasi cumque amet, ad labore nostrum expedita
             vero consectetur nam aut asperiores maxime. Sed itaque expedita quos
             assumenda!
+          </div>
+        </div>
+        <div className="row mt-5">
+          <div className="col-md-6">
+            <AccordionComponent />
           </div>
         </div>
       </div>
