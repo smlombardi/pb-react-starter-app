@@ -17,7 +17,7 @@ export default function Footer() {
             <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-sm-center">
               <a
                 class="footer-logo d-block d-sm-inline-block text-center text-sm-left mr-sm-2"
-                href="http://www.pb.com"
+                href="https://www.pb.com"
                 aria-label="Pitney Bowes"
               ></a>
               <span class="d-block d-sm-inline-block text-center text-sm-left pt-1 pb-3 p-sm-0">

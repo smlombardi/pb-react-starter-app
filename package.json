@@ -1,6 +1,7 @@
 {
-  "name": "bootstrap-test",
+  "name": "pb-react-starter",
   "version": "0.1.0",
+  "description": "React port of ng-starter",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

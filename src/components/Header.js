@@ -40,9 +40,9 @@ export default function Header() {
                       </NavDropdown>
                     </Nav>
                     <Nav>
-                      <Nav.Link href="#deets">More deets</Nav.Link>
+                      {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
                       <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
+                        Melanie Daniels
                       </Nav.Link>
                     </Nav>
                   </Navbar.Collapse>
