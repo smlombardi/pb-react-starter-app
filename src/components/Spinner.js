@@ -1,9 +1,11 @@
+import styles from "./Spinner.module.css";
+
 export default function Spinner({ size = 48 }) {
   return (
     <>
       <span role="alert" aria-live="assertive">
         <span
-          className="sbl-circ"
+          className={styles.spinner}
           style={{
             width: `${size}px`,
             height: `${size}px`,

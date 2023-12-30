@@ -1,6 +1,7 @@
 import Layout from "./Layout";
 import PageTitle from "../components/PageTitle";
 import AccordionComponent from "../components/Accordion";
+import Spinner from "../components/Spinner";
 
 export default function Home() {
   return (
@@ -20,6 +21,11 @@ export default function Home() {
         <div className="row mt-5">
           <div className="col-md-6">
             <AccordionComponent />
+          </div>
+          <div className="col-md-6">
+            <Spinner />
+            &nbsp;
+            <Spinner size={24} />
           </div>
         </div>
       </div>
