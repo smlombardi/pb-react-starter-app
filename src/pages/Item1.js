@@ -1,9 +1,8 @@
-import Layout from "./Layout";
 import PageTitle from "../components/PageTitle";
 
 export default function Item1() {
   return (
-    <Layout>
+    <>
       <PageTitle ttl="Item1" sub="I am a typical subhead" layout="container" />
       <div className="container mt-7">
         <div className="row">
@@ -17,6 +16,6 @@ export default function Item1() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }

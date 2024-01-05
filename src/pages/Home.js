@@ -1,11 +1,10 @@
-import Layout from "./Layout";
 import PageTitle from "../components/PageTitle";
 import AccordionComponent from "../components/Accordion";
 import Spinner from "../components/Spinner";
 
 export default function Home() {
   return (
-    <Layout>
+    <>
       <PageTitle ttl="Home" layout="container" />
       <div className="container mt-7">
         <div className="row">
@@ -29,6 +28,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
