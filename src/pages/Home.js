@@ -1,6 +1,6 @@
 import PageTitle from "../components/PageTitle";
 import AccordionComponent from "../components/Accordion";
-import Spinner from "../components/Spinner";
+// import Spinner from "../components/Spinner";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       <PageTitle ttl="Home" layout="container" />
       <div className="container mt-7">
         <div className="row">
-          <div className="col">
+          <div className="col-lg-8">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, dicta
             facilis earum repellat explicabo, quasi tenetur non quo odio dolor
             illum? Hic dolorem, explicabo omnis nemo asperiores provident unde
