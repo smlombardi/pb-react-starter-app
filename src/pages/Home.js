@@ -22,9 +22,9 @@ export default function Home() {
             <AccordionComponent />
           </div>
           <div className="col-md-6">
-            <Spinner />
+            {/* <Spinner />
             &nbsp;
-            <Spinner size={24} />
+            <Spinner size={24} /> */}
           </div>
         </div>
       </div>
