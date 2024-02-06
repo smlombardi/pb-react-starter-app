@@ -1,12 +1,10 @@
-import { Link } from "react-router-dom";
-
 export default function Footer() {
-  const startYear = 2021;
-  const currentYear = new Date().getFullYear();
+  const startYear: number = 2021;
+  const currentYear: number = new Date().getFullYear();
   let date = "";
 
   if (startYear === currentYear) {
-    date = currentYear;
+    date = currentYear.toString();
   } else {
     date = `${startYear}-${currentYear}`;
   }
@@ -30,9 +28,15 @@ export default function Footer() {
 
           <div className="col-xs-12 col-md-4 col-lg-6">
             <div className="d-flex justify-content-center justify-content-sm-end align-items-sm-center">
-              <Link className="ml-3">Legal</Link>
-              <Link className="ml-3">Accessibility</Link>
-              <Link className="ml-3">Contact Us</Link>
+              <a className="d-block" href="">
+                Legal
+              </a>
+              <a className="d-block ml-3" href="">
+                Accessibility
+              </a>
+              <a className="d-block ml-3" href="">
+                Contact us
+              </a>
             </div>
           </div>
         </div>

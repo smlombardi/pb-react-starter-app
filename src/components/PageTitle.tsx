@@ -1,5 +1,12 @@
 import classNames from "classnames";
-export default function PageTitle({ ttl, sub, layout }) {
+
+interface PageTitleProps {
+  ttl: string;
+  sub?: string;
+  layout?: string;
+}
+
+const PageTitle = ({ ttl, sub, layout }: PageTitleProps) => {
   const titleClasses = classNames({
     "mb-0": sub,
     "has-sub": !sub,
@@ -17,4 +24,6 @@ export default function PageTitle({ ttl, sub, layout }) {
       </div>
     </div>
   );
-}
+};
+
+export default PageTitle;

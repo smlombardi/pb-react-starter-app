@@ -1,6 +1,5 @@
-import PageTitle from "../components/PageTitle";
 import AccordionComponent from "../components/Accordion";
-// import Spinner from "../components/Spinner";
+import PageTitle from "../components/PageTitle";
 
 export default function Home() {
   return (
@@ -21,11 +20,7 @@ export default function Home() {
           <div className="col-md-6">
             <AccordionComponent />
           </div>
-          <div className="col-md-6">
-            {/* <Spinner />
-            &nbsp;
-            <Spinner size={24} /> */}
-          </div>
+          <div className="col-md-6"></div>
         </div>
       </div>
     </>
