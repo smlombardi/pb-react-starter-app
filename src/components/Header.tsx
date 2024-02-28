@@ -1,13 +1,29 @@
+import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+  const scrollThreshold = 50; // Adjust this value to define the scroll position for animation
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > scrollThreshold);
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    // Cleanup function to remove event listener on component unmount
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollThreshold]);
   return (
     <>
-      <header className="bg-brand-header fixed-top">
+      <header
+        className={`bg-brand-header fixed-top ${scrolled ? "scrolled" : ""}`}
+      >
         <div className="container-fluid">
           <div className="row">
             <div className="col">
